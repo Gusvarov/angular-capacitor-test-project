@@ -1,0 +1,15 @@
+h2 {
+   display: flex;
+   justify-content: center;
+}
+
+.form {
+    height: 100%;
+}
+
+button {
+    width: 100px;
+    &.logout {
+        margin-top: 10px;
+    }    
+}

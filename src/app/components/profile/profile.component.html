@@ -1,0 +1,14 @@
+<h2>Profile Page</h2>
+<form class="form"  [formGroup] = "profileForm"  (ngSubmit)="submitForm()">
+    <div class="form-item">
+        <label for="username">Username</label>
+        <input type="text" formControlName="username" name="username">
+    </div>
+    <div class="form-item">
+        <label for="password">Password</label>
+        <input type="password"formControlName="password" name="password">
+    </div>
+    <p *ngIf="successMessage">{{ successMessage }}</p>
+    <button type="submit">Edit Profile</button>
+    <button type="button" class="logout" (click)="logout()">Logout</button>
+</form>
